@@ -1,0 +1,452 @@
+<!Doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Writing with Python</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<style>
+body{
+background: linear-gradient(to right, rgba(255,4,4,0), rgba(255,4,0,0.5));
+text-align:center;
+}
+h1 {  
+  position: relative;    
+  font-family: Arial;  
+  font-weight: 300px;  
+  font-size: 25px;  
+  color: #080808;
+  padding:2px      
+}
+h2 {  
+  position: relative;    
+  font-family: Arial;  
+  font-weight: 300px;  
+  font-size: 25px;  
+  color: #080808;
+  padding:2px;      
+}
+#myframea{
+overflow-y:scroll; 
+height:300px;
+padding:2px;
+background:white;
+border:3px solid purple;
+text-align:left;
+padding:2px;
+}
+#myframe{
+overflow-y:scroll; 
+height:100px;
+padding:2px;
+background:white;
+text-align:left;
+}
+#myframe1{
+overflow-y:scroll; 
+height:100px;
+padding:2px;
+background:azure;
+text-align:left;
+}
+hr{
+border:1px solid black;
+padding:2px;
+}
+#mybutton{
+width:140px;
+height:30px;
+background:#501505;
+color:white;
+font-weight:bold;
+text-align:center;
+padding:2px;
+
+}
+</style>
+  </head>
+  <body>
+<h1>Write or paste the Python codes at editor bellow and click on the arrow to see the results</h1> 
+<div id="myframea">
+  <py-repl id="my-repl" auto-generate=true> </py-repl>
+</div>
+<hr>
+<div id="mybutton">
+<button onclick="JavaScript: location.reload(true)">Refresh/Clear all</button>
+</div>
+<h2>Python codes</h2>
+<div id="myframe">
+<p> 
+#Exercise 1<br>
+print("Hello, World! &#x1F310 ") </p>
+</div>
+<hr>
+<div id="myframe1">
+<p>#Exercise 2<br>
+<pre>
+if 8 > 2: 
+ print("Eight is greater than two!") 
+if 8 > 2: 
+        print('&#x2705')
+</pre>
+</p>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 3<br>
+x = 10<br>
+y = "John"<br>
+print(x)<br>
+print(y)<br>
+print('&#x1F44D') </p>
+</div>
+<hr>
+<div id="myframe1">
+<p>#Exercise 4<br>
+x, y, z = "Orange", "Banana", "Cherry"<br>
+print(x)<br>
+print(y)<br>
+print(z)<br>
+print('&#x1F44D')</p>
+</div>
+<hr>
+<div id="myframe">
+<p>#Exercise 5<br>
+x = "Python is awesome"<br>
+print(x)<br>
+print('&#x1F9F0')</p>
+</div>
+<hr>
+<div id="myframe1">
+<pre>
+#Exercise 6
+x = "awesome"
+def myfunc():
+  print("Python is " + x)<br>
+  print('&#x1F9F0');<br>
+myfunc()</pre>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 7
+print("Hello")<br>
+print('Hello')<br>
+print('&#x270C')</p>
+</div>
+<hr>
+<div id="myframe1">
+<p>
+#Exercise 8<br>
+b = "Hello, World!"<br>
+print(b[0:5])<br>
+print(b[0:13])<br>
+print('&#x1F4CC')</p>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 9<br>
+a = "Hello, World!"<br>
+print(a.upper())<br>
+print('&#x1F9F0')</p>
+</div>
+<hr>
+<div id="myframe1">
+<p>
+#Exercise 10<br>
+a = "Hello"<br>
+b = "World"<br>
+c = a + b<br>
+print(c)<br>
+print('&#x2699')</p>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 11<br>
+age = 40<br>
+txt = "My name is John, I am ", age<br>
+ print(txt)<br>
+ print('&#x1F6E0')</p>
+</div>
+<hr>
+<div id="myframe1">
+<p>
+#Exercise 12<br>
+print(10 > 9)<br>
+print(10 == 9)<br>
+print(10 < 9)<br>
+print('&#x2705')</p>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 13<br>
+print(10 + 5)<br>
+print('&#x1F44D')</p>
+</div>
+<hr>
+<div id="myframe1">
+<p>
+#Exercise 14<br>
+print(10 + 5/5 *8)<br>
+print('&#x1F44D')</p>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 15<br>
+thislist = ["apple", "banana", "cherry"]<br>
+print(thislist)<br>
+thislist1 = ['&#x1F34E', '&#x1F34C', '&#x1F352']<br>
+print(thislist1)</p>
+</div>
+<hr>
+<div id="myframe1">
+<p>
+#Exercise 16<br>
+thistuple = ("Blueberries", "Kiwi fruit", "Strawberries")<br>
+print(thistuple)<br>
+thistuple1 = ('&#x1FAD0', '&#x1F95D', '&#x1F353')<br>
+print(thistuple1)</p>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 17<br>
+thistuple = ("Blueberries", "Kiwi fruit", "Strawberries")<br>
+print(thistuple)<br>
+thistuple1 = ('&#x1FAD0', '&#x1F95D', '&#x1F353')<br>
+print(thistuple1)</p>
+</div>
+<hr>
+<div id="myframe1">
+<p>
+#Exercise 18<br>
+thistuple = ("Tomato", "Olive", "Coconut")<br>
+print(thistuple[0])<br>
+thistuplex = ('&#x1F345', '&#x1FAD2', '&#x1F965')<br>
+print(thistuplex[0])
+</p>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 19<br>
+x = ("apple", "banana", "cherry")<br>
+y = list(x)<br>
+y[1] = "kiwi"<br>
+x = tuple(y)<br>
+print(x)<br>
+print('&#x1F44D')
+</p>
+</div>
+<hr>
+<div id="myframe1">
+<pre>
+#Exercise 20
+thistuple = ("pineapple", "melon", "cherry")
+for x in thistuple:
+  print(x) 
+  print('&#x1F44F')
+</pre>
+</div>
+<hr>
+<div id="myframe">
+<pre>
+#Exercise 21
+thistuple = ('&#x1F347', '&#x1F349', '&#x1F348')
+for x in thistuple:
+  print(x) 
+</pre>
+</div>
+<hr>
+<div id="myframe1">
+<p>
+#Exercise 22<br>
+tuple1 = ("Door", "bed" , "sink")<br>
+tuple2 = (1, 2, 3)<br>
+
+tuple3 = tuple1 + tuple2<br>
+print(tuple3)<br>
+print('&#x1F6E0')<br> 
+</p>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 23<br>
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)<br>
+
+x = thistuple.count(4)<br>
+
+print(x)<br>
+print('&#x2705')
+</p>
+</div>
+<hr>
+<div id="myframe1">
+<p>
+#Exercise 24<br>
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)<br>
+
+x = thistuple.count(4)<br>
+y = thistuple.count(8)<br>
+
+print(x)<br>
+print(y)<br>
+print('&#x1F44D')
+</p>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 25<br>
+thisset = {"apple", "banana", "cherry"}<br>
+print(thisset)
+</p>
+</div>
+<hr>
+<div id="myframe1">
+<p>
+#Exercise 26<br>
+thisset = {"apple", "banana", "cherry"}<br>
+print(thisset)<br>
+thisset1 = {'&#x1F34E', '&#x1F34C', '&#x1F352'}<br>
+print(thisset1)
+</p>
+</div>
+<hr>
+<div id="myframe">
+<pre>
+#Exercise 27
+thisset = {"apple", "banana", "cherry"}
+for x in thisset:
+  print(x)
+  print('&#x2699')
+</pre>
+</div>
+<hr>
+<div id="myframe1">
+<pre>
+#Exercise 28
+thisset = {'&#x1F34E', '&#x1F34C', '&#x1F352'}
+for x in thisset:
+  print(x)
+  print('&#x2699')
+</pre>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 29<br>
+thisset = {"apple", "banana", "cherry"}<br>
+thisset.add("orange")<br>
+print(thisset)<br>
+print('&#x2795')
+</p>
+</div>
+<hr>
+<div id="myframe1">
+<p>
+#Exercise 30<br>
+thisset = {'&#x1F34E', '&#x1F34C', '&#x1F352'}<br>
+thisset.add('&#x1F34B')<br>
+print(thisset)<br>
+</p>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 31<br>
+thisset = {"apple", "banana", "cherry"}<br>
+thisset.remove("banana")<br>
+print(thisset)<br>
+print('&#x2796')
+</p>
+</div>
+<hr>
+<div id="myframe1">
+<p>
+#Exercise 32<br>
+thisset = {'&#x1F34E', '&#x1F34C', '&#x1F352'}<br>
+thisset.remove('&#x1F34C')<br>
+print(thisset)
+</p>
+</div>
+<hr>
+<div id="myframe">
+<p>
+#Exercise 33<br>
+set1 = {"a", "b", "c"}<br>
+set2 = {1, 2, 3}<br>
+set3 = set1.union(set2)<br>
+print(set3)<br>
+print('&#x26D3')
+</p>
+</div>
+<hr>
+<div id="myframe1">
+<p>
+#Exercise 34<br>
+set1 = {'&#x1F34E', '&#x1F34C', '&#x1F352'}<br>
+set2 = {'&#x1F34E', '&#x1FAD0', '&#x1F352'}<br>
+set3 = set1.union(set2)<br>
+print(set3)
+</p>
+</div>
+<hr>
+<div id="myframe">
+<pre>
+#Exercise 35 Simple Average
+def my_function(x,y):
+  return (x + y) / 2
+print(my_function(10,2)) #Enter the values of x and y
+</pre>
+</div>
+<hr>
+<div id="myframe1">
+<pre>
+#Exercise 36 Average Speed
+def my_function(space,time):
+  return space / time
+print(my_function(10,2)) #Enter the values of space (m) and time (s)
+print("m/s")
+print("Motion representation:")
+thistuple = ('&#x1F3C3', '&#x1F697', '&#x1F682')
+print(thistuple)
+</pre>
+</div>
+<hr>
+<div id="myframe">
+<pre>
+#Exercise 37 Equation of uniform motion
+def my_function(s0space,averagespeed,time):
+  return s0space + averagespeed * time
+print(my_function(1,12,2)) #Enter the values of initial space, everage speed and time.Whereas vm=space/time
+print("m")
+print("Motion representation:")
+thistuple = ('&#x1F3C3', '&#x1F697', '&#x1F682')
+print(thistuple)
+</pre>
+</div>
+<hr>
+<div id="myframe1">
+<pre>
+#Exercise 38 Circumference Area
+import math
+def my_function(r):
+  return (math.pi) * r**2
+
+print(my_function(1)) #Enter the values of the radius 
+print("Unit of space")
+thistuple = ('&#x1F7E2')
+print(thistuple)
+</pre>
+</div>
+
+</body>
+</html>
